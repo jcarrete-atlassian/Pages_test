@@ -1,12 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index.html</title>
+  <meta charset="UTF-8" />
+  <title>Mario Bros – Public Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Global reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: #0c1022;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ffd54f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout */
+    header {
+      background: linear-gradient(135deg, #f44336 0%, #ff9800 100%);
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .card {
+      background: #15192f;
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .card.highlight {
+      border-color: #ff9800;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+      color: #ffeb3b;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.4rem;
+      color: #ffcc80;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      font-size: 0.96rem;
+      color: #e8e8e8;
+    }
+
+    ul {
+      margin: 0.4rem 0 0.9rem 1.3rem;
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    code {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+        "Courier New", monospace;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.1rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffe082;
+      margin-right: 0.4rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .grid-item {
+      background: #1c2140;
+      border-radius: 10px;
+      padding: 0.9rem 0.9rem 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .grid-item h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2.5rem;
+      font-size: 0.8rem;
+      color: #bdbdbd;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      background: #090b14;
+    }
+
+    .note {
+      font-size: 0.8rem;
+      opacity: 0.8;
+      margin-top: 0.5rem;
+    }
+
+    /* Small-screen tweaks */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.9rem;
+      }
+
+      main {
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>This ia my first page.</p>
+  <header>
+    <h1>Mario Bros – Public Documentation</h1>
+    <p>A high‑level, unofficial overview of the world, characters, and gameplay systems.</p>
+  </header>
+
+  <main>
+    <section class="card highlight">
+      <span class="tag">Overview</span>
+      <p>
+        This page provides an informal, public‑facing description of the
+        <strong>Mario Bros</strong> universe and game structure. It is
+        written as generic documentation for educational and reference
+        purposes only.
+      </p>
+      <p style="margin-top:0.4rem;">
+        The original page content was:
+        <em>"This ia my first page."</em>
+        The sections below extend that with a more complete write‑up.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>1. Universe &amp; Core Premise</h2>
+      <p>
+        Mario Bros is centered around the adventures of two Italian
+        plumbers, <strong>Mario</strong> and his younger brother
+        <strong>Luigi</strong>. They typically operate in and around the
+        <strong>Mushroom Kingdom</strong>, a whimsical world populated by
+        humans, talking mushrooms, turtles, and a wide variety of other
+        fantastical creatures.
+      </p>
+
+      <h3>1.1 Main Conflict</h3>
+      <p>
+        The recurring conflict usually involves the antagonist
+        <strong>Bowser</strong>, king of the Koopas, who often kidnaps
+        <strong>Princess Peach</strong> or otherwise threatens the Mushroom
+        Kingdom. Mario and Luigi set out to rescue the princess, restore
+        peace, and defeat Bowser’s forces across a sequence of themed
+        levels or “worlds”.
+      </p>
+
+      <h3>1.2 Tone &amp; Style</h3>
+      <p>
+        The series is characterized by:
+      </p>
+      <ul>
+        <li>Colorful, cartoon‑like visuals</li>
+        <li>Light‑hearted stories suitable for all ages</li>
+        <li>Platforming challenges emphasizing timing and precision</li>
+        <li>Iconic audio cues and music motifs</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Main Characters</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>2.1 Mario</h3>
+          <p>
+            Mario is the primary protagonist and player avatar in most
+            titles. He is usually depicted in a red cap and overalls.
+            Gameplay‑wise he is the all‑rounder: solid movement speed,
+            responsive jumping, and compatibility with most power‑ups.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>2.2 Luigi</h3>
+          <p>
+            Luigi is Mario’s taller brother, recognized by his green cap.
+            In some games he jumps higher but slides more on landing, giving
+            him a slightly different handling profile while remaining
+            mechanically comparable to Mario.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>2.3 Princess Peach</h3>
+          <p>
+            Princess Peach is the ruler of the Mushroom Kingdom. She is
+            frequently captured by Bowser, which sets the narrative goal
+            for many adventures. In some games she is a fully playable
+            character with abilities such as short hovering glides.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>2.4 Bowser</h3>
+          <p>
+            Bowser is a large, fire‑breathing Koopa with a spiked shell and
+            is the central antagonist of the series. Boss encounters with
+            Bowser often involve dodging projectiles, avoiding pits, and
+            activating environment triggers to defeat him.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Gameplay Structure</h2>
+      <p>
+        Core Mario Bros gameplay is built around <strong>2D or 3D
+        platforming</strong>, where players navigate levels by running,
+        jumping, and using power‑ups. The general loop is:
+      </p>
+      <ul>
+        <li>Enter a level or world map node.</li>
+        <li>Traverse terrain, enemies, and obstacles.</li>
+        <li>Collect items, coins, or secrets where possible.</li>
+        <li>Reach a flagpole, goal, or boss room.</li>
+      </ul>
+
+      <h3>3.1 Movement &amp; Controls</h3>
+      <p>
+        Standard actions include:
+      </p>
+      <ul>
+        <li><strong>Run:</strong> Increase horizontal speed, clear larger gaps.</li>
+        <li><strong>Jump:</strong> Avoid hazards, land on enemies, reach platforms.</li>
+        <li><strong>Crouch:</strong> Avoid low projectiles or pass through small spaces.</li>
+      </ul>
+
+      <h3>3.2 Levels &amp; Worlds</h3>
+      <p>
+        Levels are usually grouped into “worlds”, each with a distinct
+        theme, such as:
+      </p>
+      <ul>
+        <li>Grasslands and plains (introductory, lower difficulty)</li>
+        <li>Underground caves and tunnels</li>
+        <li>Water levels with swimming mechanics</li>
+        <li>Deserts, forests, sky‑based or cloud levels</li>
+        <li>Castle or fortress stages featuring Bowser or sub‑bosses</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Items &amp; Power‑Ups</h2>
+      <p>
+        A core feature of Mario Bros is its <strong>power‑up
+        system</strong>, where items temporarily grant additional
+        abilities or health.
+      </p>
+
+      <h3>4.1 Common Power‑Ups</h3>
+      <ul>
+        <li><strong>Super Mushroom:</strong> Increases Mario’s size and allows him to survive one extra hit.</li>
+        <li><strong>Fire Flower:</strong> Grants fireballs that can be thrown at enemies.</li>
+        <li><strong>Super Star:</strong> Brief invincibility, with enhanced defeat of enemies on contact.</li>
+        <li><strong>1‑Up Mushroom:</strong> Awards an extra life.</li>
+      </ul>
+
+      <h3>4.2 Coins &amp; Score</h3>
+      <p>
+        <strong>Coins</strong> are typically scattered throughout levels in
+        blocks, hidden areas, or enemy paths. Collecting a fixed number
+        (commonly 100) yields an extra life. Some games display a
+        <strong>score</strong> based on enemies defeated and items
+        collected; others de‑emphasize scoring in favor of completion and
+        secrets.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Enemies &amp; Obstacles</h2>
+      <p>
+        Enemies in Mario Bros combine simple movement patterns with level
+        design to create timing‑based challenges.
+      </p>
+
+      <h3>5.1 Typical Enemies</h3>
+      <ul>
+        <li><strong>Goombas:</strong> Walk forward in a straight line; defeated by jumping on them.</li>
+        <li><strong>Koopa Troopas:</strong> Turtle‑like foes that retreat into shells when stomped.</li>
+        <li><strong>Piranha Plants:</strong> Emerge from pipes on a timed cycle, punishing rushed movement.</li>
+        <li><strong>Hammer Bros:</strong> Throw hammers from platforms or ground level.</li>
+      </ul>
+
+      <h3>5.2 Environmental Hazards</h3>
+      <ul>
+        <li>Bottomless pits and lava pools</li>
+        <li>Moving platforms and collapsing blocks</li>
+        <li>Fire bars, cannons, and projectile traps</li>
+        <li>Time limits encouraging steady forward progress</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Multiplayer &amp; Variants</h2>
+      <p>
+        Various entries in the Mario Bros series support <strong>local or
+        online multiplayer</strong>, where multiple players can control
+        characters such as Mario, Luigi, Toad, or Peach. Cooperative play
+        often mixes collaboration (helping each other clear obstacles) with
+        light competition (who gets the most coins or points).
+      </p>
+      <p>
+        Beyond the core platformers, Mario appears in numerous spin‑off
+        genres, including racing, sports, puzzle games, and party‑style
+        minigame collections. These still reference the same characters and
+        visual style, but use very different rule sets and mechanics.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Purpose of This Document</h2>
+      <p>
+        This page is intended as a <strong>public documentation‑style
+        text</strong> about the Mario Bros universe. It:
+      </p>
+      <ul>
+        <li>Provides an at‑a‑glance summary for readers unfamiliar with the games.</li>
+        <li>Uses neutral, descriptive language rather than walkthrough details.</li>
+        <li>Is designed as sample content for styling and layout tests.</li>
+      </ul>
+      <p class="note">
+        All character names and concepts referenced here are used purely
+        descriptively. This page is not an official product or publication.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Mario Bros – Unofficial Public Documentation Sample</div>
+    <div class="note">
+      Original placeholder text: “This ia my first page.”
+    </div>
+  </footer>
 </body>
 </html>
